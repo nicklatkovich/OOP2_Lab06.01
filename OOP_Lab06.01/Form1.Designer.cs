@@ -23,19 +23,12 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent( ) {
-            this.ListView = new System.Windows.Forms.ListView();
             this.TextInput = new System.Windows.Forms.TextBox();
             this.ButtonAdd = new System.Windows.Forms.Button();
+            this.ListBox = new System.Windows.Forms.ListBox();
+            this.ButtonRemove = new System.Windows.Forms.Button();
+            this.ButtonSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // ListView
-            // 
-            this.ListView.Location = new System.Drawing.Point(12, 12);
-            this.ListView.Name = "ListView";
-            this.ListView.Size = new System.Drawing.Size(220, 355);
-            this.ListView.TabIndex = 0;
-            this.ListView.UseCompatibleStateImageBehavior = false;
-            this.ListView.SelectedIndexChanged += new System.EventHandler(this.ListView_SelectedIndexChanged);
             // 
             // TextInput
             // 
@@ -47,22 +40,54 @@
             // 
             // ButtonAdd
             // 
-            this.ButtonAdd.Location = new System.Drawing.Point(296, 50);
+            this.ButtonAdd.Location = new System.Drawing.Point(281, 61);
             this.ButtonAdd.Name = "ButtonAdd";
-            this.ButtonAdd.Size = new System.Drawing.Size(75, 23);
+            this.ButtonAdd.Size = new System.Drawing.Size(111, 23);
             this.ButtonAdd.TabIndex = 2;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
+            // ListBox
+            // 
+            this.ListBox.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListBox.FormattingEnabled = true;
+            this.ListBox.ItemHeight = 24;
+            this.ListBox.Location = new System.Drawing.Point(12, 12);
+            this.ListBox.Name = "ListBox";
+            this.ListBox.Size = new System.Drawing.Size(220, 364);
+            this.ListBox.TabIndex = 3;
+            // 
+            // ButtonRemove
+            // 
+            this.ButtonRemove.Location = new System.Drawing.Point(281, 90);
+            this.ButtonRemove.Name = "ButtonRemove";
+            this.ButtonRemove.Size = new System.Drawing.Size(111, 23);
+            this.ButtonRemove.TabIndex = 4;
+            this.ButtonRemove.Text = "Remove";
+            this.ButtonRemove.UseVisualStyleBackColor = true;
+            this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
+            // 
+            // ButtonSort
+            // 
+            this.ButtonSort.Location = new System.Drawing.Point(281, 119);
+            this.ButtonSort.Name = "ButtonSort";
+            this.ButtonSort.Size = new System.Drawing.Size(111, 23);
+            this.ButtonSort.TabIndex = 5;
+            this.ButtonSort.Text = "Change Sort";
+            this.ButtonSort.UseVisualStyleBackColor = true;
+            this.ButtonSort.Click += new System.EventHandler(this.ButtonSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 379);
+            this.ClientSize = new System.Drawing.Size(438, 389);
+            this.Controls.Add(this.ButtonSort);
+            this.Controls.Add(this.ButtonRemove);
+            this.Controls.Add(this.ListBox);
             this.Controls.Add(this.ButtonAdd);
             this.Controls.Add(this.TextInput);
-            this.Controls.Add(this.ListView);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -71,10 +96,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView ListView;
         private System.Windows.Forms.TextBox TextInput;
         private System.Windows.Forms.Button ButtonAdd;
+        private System.Windows.Forms.ListBox ListBox;
+        private System.Windows.Forms.Button ButtonRemove;
+        private System.Windows.Forms.Button ButtonSort;
     }
 }
 
