@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Lab06.01", "OOP_Lab06.01\OOP_Lab06.01.csproj", "{88250D9D-D698-46E7-AA50-721389A607CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7615256-CD97-40F8-B773-D01AECF7D41D} = {C7615256-CD97-40F8-B773-D01AECF7D41D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Lab04", "Libs\OOP2_Lab04\OOP_Lab04\OOP_Lab04.csproj", "{C7615256-CD97-40F8-B773-D01AECF7D41D}"
 EndProject
